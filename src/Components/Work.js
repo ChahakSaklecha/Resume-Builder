@@ -1,5 +1,7 @@
 import React from "react";
-import BannerBackground from "../Assets/home-banner-background.png";
+import banner from "../Assets/banner1.png";
+
+// import BannerBackground from "../Assets/home-banner-background.png";
 const Work = () => {
   const workInfoData = [
     {
@@ -21,10 +23,11 @@ const Work = () => {
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-      
-        <h1 className="primary-heading">Template Selection</h1>
+        <img className="work-image" src={banner} />
+        <img className="work-image-chotu" src={banner} />
+        <h1 className="work-primary-heading">Template Selection</h1>
         <div className="home-bannerImage-container">
-          <img src={BannerBackground} alt="" />
+          
         </div>
         <p className="primary-text">
         Choose from a variety of templates tailored to different industries. Each template is crafted to showcase your skills and experience.

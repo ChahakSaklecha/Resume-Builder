@@ -10,14 +10,14 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-         <AssignmentIcon />
-         <p>Easy Resume Generator</p>
+         <AssignmentIcon className="footer-icon" style={{ fontSize: '45px',color: '#4C4C4C' }}/>
+         <h1 className="footer-para">Easy Resume Generator</h1>
         </div>
         <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
+          <BsTwitter className="footer-icon" style={{ fontSize: '30px',color: '#00acee' }} />
+          <SiLinkedin className="footer-icon" style={{ fontSize: '30px',color: '#0A66C2' }} />
+          <BsYoutube className="footer-icon" style={{ fontSize: '30px',color: 'red' }} />
+          <FaFacebookF className="footer-icon" style={{ fontSize: '30px',color: '#3b5998' }}/>
         </div>
       </div>
       <div className="footer-section-two">

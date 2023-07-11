@@ -22,12 +22,29 @@ body {
 body {
   background-color: #f6f6f6;
 }
+.home-para{
+width: 1000px;
+height: 68px;
 
-nav {
+font-family: 'Reem Kufi';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 68px;
+/* identical to box height */
+display: flex;
+align-items: center;
+color: #4C4C4C;
+margin-top: 20px;
+}
+.nav-logo-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 90px;
+  
+}
+.navbar-icon{
+  font-size: 100px;
 }
 .navbar-menu-container {
   display: none;
@@ -67,14 +84,24 @@ nav {
 }
 .home-bannerImage-container {
   position: absolute;
+  border-right: 0;
   top: -100px;
-  right: -170px;
+  right: -400px;
   z-index: -2;
   max-width: 700px;
+  margin-top: 0;
 }
-.home-image-section {
-  max-width: 600px;
+/* .home-image-section {
+  height: 0;
+  max-width: 400px;
   flex: 1;
+} */
+
+.home-image{
+  height: 560px;
+  max-width: 450px;
+  flex: 1;
+  margin-top: -40px
 }
 .home-text-section {
   flex: 1;
@@ -84,20 +111,33 @@ nav {
   align-items: flex-start;
 }
 .primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 85px;
   color: #4c4c4c;
   /* line-height: 5rem; */
-  max-width: 600px;
+  max-width: 900px;
+  color: #4C4C4C;
+  margin-top: -70px;
 }
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
+  font-weight: 800;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
+  color: #78C1F3;
+}
+.work-primary-heading{
+  font-size: 85px;
+  color: #4c4c4c;
+  width: 2000px;
+  /* line-height: 5rem; */
+  justify-content: center;
+  margin-top: -70px;
+  white-space: nowrap;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #78C1F3;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -109,6 +149,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .secondary-button svg {
   margin-left: 0.75rem;
@@ -166,8 +207,16 @@ nav {
   font-size: 3rem;
   margin-right: 1rem;
 }
-.contact-page-wrapper h1 {
-  max-width: 900px !important;
+.contact-primary-heading{
+  font-size: 85px;
+  color: #4c4c4c;
+  width: 2000px;
+  /* line-height: 5rem; */
+  margin-left: 0px;
+  margin-top: -70px;
+  white-space: nowrap;
+  
+  text-align: center; /* Add this property */
 }
 .contact-page-wrapper {
   display: flex;
@@ -175,6 +224,8 @@ nav {
   justify-content: center;
   flex-direction: column;
   margin: 6rem 0rem;
+  margin-left: 0px;
+  text-align: center
 }
 .contact-form-container {
   background-color: white;
@@ -184,7 +235,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 1rem;
-  border-radius: 5rem;
+  border-radius: 1rem;
 }
 .contact-form-container input {
   flex: 1;
@@ -194,6 +245,55 @@ nav {
   font-size: 1.3rem;
   padding: 0.5rem 1rem;
 }
+/*.personal-info-container input{
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+}
+.name{
+  display: flex;
+  
+}*/
+
+.personal-info-container {
+  display: grid;
+  
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  font-size: 18px; /* Adjust the font size as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  margin: 20px; /* Adjust the margin as needed */
+}
+
+.name {
+  display: flex;
+  width: 340px;
+  flex-direction: column;
+}
+
+.name input {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  height: 70px;
+  font-size: large;
+}
+
+.contact-heading {
+  font-size: 26px; /* Increase the font size as needed */
+  font-weight: bold;
+  color: #4c4c4c;
+  margin-top: 3rem;
+  text-align: left; /* Align to the left */
+  
+}
+
 .footer-wrapper {
   margin: 6rem 0rem;
   display: flex;
@@ -201,6 +301,11 @@ nav {
 }
 .footer-logo-container {
   max-width: 110px;
+  white-space: nowrap;
+  display: flex;
+}
+.footer-para{
+  color: #4C4C4C;
 }
 .footer-icons {
   margin-top: 2.5rem;
@@ -222,6 +327,9 @@ nav {
   display: flex;
   flex-direction: column;
   min-width: 190px;
+  color: #4C4C4C;
+  font-size: 20px;
+  line-height: 52px;
 }
 .footer-section-columns span {
   margin: 0.25rem 0rem;
@@ -266,6 +374,27 @@ nav {
   text-align: center;
   max-width: 600px !important;
 }
+.work-image{
+  position: absolute;
+  border-right: 0;
+  top: -100px;
+  left: -500px;
+  z-index: -2;
+  max-width: 700px;
+  margin-top: +950px;
+
+}
+.work-image-chotu{
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border-right: 0;
+  top: -70px;
+  left: +150px;
+  z-index: -2;
+  max-width: 700px;
+  margin-top: +938px;
+}
 .work-section-top h1 {
   max-width: 700px !important;
 }
@@ -277,7 +406,7 @@ nav {
 }
 .work-section-info {
   width: 290px;
-  min-height: 350px;
+  min-height: 330px;
   background-color: white;
   padding: 1rem 2rem;
   display: flex;

@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav>
       <div className="nav-logo-container">
         
-        <AssignmentIcon /> 
-        <p>Easy Resume Generator</p>
+        <AssignmentIcon className="navbar-icon" style={{ fontSize: '75px',color: '#4C4C4C',marginTop: '20px' }} /> 
+        <h1 className="home-para">Easy Resume Generator</h1>
         
       </div>
       
